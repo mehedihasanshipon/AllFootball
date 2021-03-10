@@ -4,9 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter,faFacebookF,faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faPodcast,faFlag,faMars } from '@fortawesome/free-solid-svg-icons';
 import { faFutbol } from '@fortawesome/free-regular-svg-icons'
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
+
 
 const TeamInfo = (props) => {
-    const {strTeamFanart1,strTeam,intFormedYear,strCountry,strSport,strGender,strTeamFanart2,strDescriptionEN,strKeywords,strLeague} = props.team;
+    const {strTeamFanart1,strTeam,intFormedYear,strCountry,strSport,strGender,strTeamFanart2,strDescriptionEN,strKeywords,strLeague,strTwitter,strFacebook,strYoutube} = props.team;
+    console.log(strTwitter)
+
+    // const history = useHistory();
+    // const handleSocialLink = (social)=>{
+    //     history.push("www.google.com");
+    // }
     return (
         <div className="container mt-5">
             <div className="row my-5  align-items-center info ">
@@ -23,7 +32,7 @@ const TeamInfo = (props) => {
                     <div id="info-img">
                         {strGender && strGender.toLowerCase() === "male"
                         ?<img className="img-fluid" src={strTeamFanart1} alt=""/>
-                        :<img className="img-fluid" src={strTeamFanart2} alt=""/>  }
+                        :<img className="img-fluid" src={strTeamFanart2} alt=""/>}
                     </div>
                 </div>
             </div>
@@ -33,9 +42,11 @@ const TeamInfo = (props) => {
                 <p>League: {strLeague}</p>
             </div>
             <div className="text-center d-flex justify-content-center">
-                <p className="mx-4 social-icon" id="twitter"><FontAwesomeIcon icon={faTwitter} /></p>
-                <p className="mx-4 social-icon" id="fb"><FontAwesomeIcon icon={faFacebookF} /></p>
-                <p className="mx-4 social-icon" id="youtube"><FontAwesomeIcon icon={faYoutube} /></p>
+
+                <a href={`https://www.${strTwitter}`} target="blank" className="mx-4 social-icon" id="twitter"><FontAwesomeIcon className="ico" icon={faTwitter} /></a>
+
+                <a href={`https://${strFacebook}`} target="blank" className="mx-4 social-icon" id="fb"><FontAwesomeIcon className="ico" icon={faFacebookF} /></a>
+                <a href={`https://${strYoutube}`} target="blank" className="mx-4 social-icon" id="youtube"><FontAwesomeIcon className="ico" icon={faYoutube} /></a>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Teams = (props) => {
-    console.log(props.team)
+    // console.log(props.team)
     const {strTeamBadge,strTeam,strSport,idTeam} = props.team;
 
     const history = useHistory();
