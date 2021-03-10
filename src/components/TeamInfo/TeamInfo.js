@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamInfo.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter,faFacebook,faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter,faFacebookF,faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faPodcast,faFlag,faMars } from '@fortawesome/free-solid-svg-icons';
 import { faFutbol } from '@fortawesome/free-regular-svg-icons'
 
@@ -9,7 +9,7 @@ const TeamInfo = (props) => {
     const {strTeamFanart1,strTeam,intFormedYear,strCountry,strSport,strGender,strTeamFanart2,strDescriptionEN,strKeywords,strLeague} = props.team;
     return (
         <div className="container mt-5">
-            <div className="row my-5  align-items-center info box">
+            <div className="row my-5  align-items-center info ">
                 <div className="col-md-6 ">
                     <div id="info-text">
                         <h2 className="mx-3">  {strTeam}</h2>
@@ -33,9 +33,9 @@ const TeamInfo = (props) => {
                 <p>League: {strLeague}</p>
             </div>
             <div className="text-center d-flex justify-content-center">
-                <p className="mx-2"><FontAwesomeIcon icon={faTwitter} /></p>
-                <p className="mx-2"><FontAwesomeIcon icon={faFacebook} /></p>
-                <p className="mx-2"><FontAwesomeIcon icon={faYoutube} /></p>
+                <p className="mx-4 social-icon" id="twitter"><FontAwesomeIcon icon={faTwitter} /></p>
+                <p className="mx-4 social-icon" id="fb"><FontAwesomeIcon icon={faFacebookF} /></p>
+                <p className="mx-4 social-icon" id="youtube"><FontAwesomeIcon icon={faYoutube} /></p>
             </div>
         </div>
     );

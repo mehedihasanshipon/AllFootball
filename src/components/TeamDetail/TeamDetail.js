@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import TeamBanner from '../TeamBanner/TeamBanner';
 import TeamInfo from '../TeamInfo/TeamInfo';
+import './TeamDetail.css'
 
 const TeamDetail = () => {
     const {id} = useParams();
@@ -15,7 +16,7 @@ const TeamDetail = () => {
     return (
         <div >
             <TeamBanner team={team} />
-            <div className="bg-dark text-white  pt-2">
+            <div className="bg text-white pt-2">
                 <TeamInfo team={team} />
             </div>
         </div>

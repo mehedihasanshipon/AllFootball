@@ -1,14 +1,29 @@
 .info{
     /* border: 1px solid red; */
     padding: 20px;
-    background-color: gray;
+    background-color: #CA132E;
     color: white;
     border-radius: 15px;
 }
-.box{
-   margin-top: 200px !important;
-}
+
  #info-img img{
     height: 200px !important;
     border-radius: 10px;
+}
+.social-icon{
+    /* border: 1px solid salmon; */
+    border-radius: 50%;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+}
+#twitter{
+    background-color: #1DA1F2;
+}
+#fb{
+    background-color: #0D8AF0;
+}
+#youtube{
+    background-color: #FF0000;
 }

@@ -10,12 +10,11 @@ body{
     background-repeat: no-repeat;
     color: white !important;
     border: none;
-   
+    margin-top: 63px;
 }
 #banner-img{
     height: 400px;
     opacity: 0.5;
-    
 }
 .badge-img{
     height: 150px !important;

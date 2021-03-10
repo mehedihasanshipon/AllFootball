@@ -6,10 +6,12 @@ import {
   Route
 } from "react-router-dom";
 import TeamDetail from './components/TeamDetail/TeamDetail';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <Router >
+      <Header />
       <Switch>
         <Route path="/home">
           <Home />
