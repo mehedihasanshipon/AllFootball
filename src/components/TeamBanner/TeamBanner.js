@@ -2,7 +2,7 @@ import React from "react";
 import './TeamBanner.css'
 
 const TeamBanner = (props) => {
-  const {strTeamBadge,strTeamFanart1,strStadiumThumb} = props.team
+  const {strTeamBadge,strStadiumThumb} = props.team
   return (
     <div mb-5>
       <header className="team-banner-section">

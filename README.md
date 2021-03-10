@@ -1,4 +1,4 @@
-# All football web app.#
+# All football web app.
 
 ### What I have been used for this project!! ###
 
@@ -12,6 +12,6 @@
   * useEffects 2
   * useParams 3
   * useHistory 4
-  
+
 http://github.com - automatic!
 [GitHub](http://github.com)
