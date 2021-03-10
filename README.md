@@ -1,11 +1,7 @@
-# All football web app.
-### What I have been used for this project!!
+# All football web app.#
+### What I have been used for this project!! ###
 
--React-router
--React-Bootstrap
--Font-awsome
--Hooks
-  *useState
-  *useEffect
-  *useParams
-  *useHistory
+* Item 1
+* Item 2
+  * Sub Item 1
+  * Sub Item 2
