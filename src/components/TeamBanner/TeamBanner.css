@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.team-banner-section{
+    height: 50vh;
+    min-height: 400px !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    border: none;
+   
+}
+#banner-img{
+    height: 400px;
+    opacity: 0.5;
+    
+}
+.badge-img{
+    height: 150px !important;
+    width: 170px !important;
+}

@@ -1,11 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Home from './components/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import TeamDetail from './components/TeamDetail/TeamDetail';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Sports mania</h2>
-    </div>
+    <Router >
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/team/:id">
+          <TeamDetail />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

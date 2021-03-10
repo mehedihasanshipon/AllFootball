@@ -1,0 +1,12 @@
+.card-custom{
+    /* border: 1px solid salmon !important; */
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-shadow: 5px 5px 10px gray;
+    padding: 25px;
+    text-align: center !important;
+}
+.card-custom img{
+    height: 200px;
+    width:200px;
+}
