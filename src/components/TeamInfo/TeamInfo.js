@@ -34,7 +34,7 @@ const TeamInfo = (props) => {
                 <p>{strKeywords}</p>
                 <p>League: {strLeague}</p>
             </div>
-            <div className="text-center d-flex justify-content-center">
+            <div className="text-center d-flex justify-content-center my-5">
                 <a href={`https://www.${strTwitter}`} target="blank" className="mx-4 social-icon" id="twitter"><FontAwesomeIcon className="ico" icon={faTwitter} /></a>
                 <a href={`https://${strFacebook}`} target="blank" className="mx-4 social-icon" id="fb"><FontAwesomeIcon className="ico" icon={faFacebookF} /></a>
                 <a href={`https://${strYoutube}`} target="blank" className="mx-4 social-icon" id="youtube"><FontAwesomeIcon className="ico" icon={faYoutube} /></a>
