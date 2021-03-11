@@ -7,8 +7,7 @@ import { faFutbol } from '@fortawesome/free-regular-svg-icons'
 
 const TeamInfo = (props) => {
     const {strTeamFanart1,strTeam,intFormedYear,strCountry,strSport,strGender,strTeamFanart2,strDescriptionEN,strKeywords,strLeague,strTwitter,strFacebook,strYoutube} = props.team;
-    console.log(strTwitter)
-
+    
     return (
         <div className="container mt-5">
             <div className="row my-5  align-items-center info ">

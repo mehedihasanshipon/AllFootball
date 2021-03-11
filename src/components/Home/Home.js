@@ -10,7 +10,6 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>{
             const allTeams = data.teams.slice(0,15);
-            // console.log(allTeams);
             setTeam(allTeams)
         })
     },[])
